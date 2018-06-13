@@ -233,7 +233,7 @@ U 1 1 5B1A2E4C
 P 8850 3900
 F 0 "P2" H 8928 3941 50  0000 L CNN
 F 1 "CONN_01X04" H 8928 3850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8850 3900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8850 3900 50  0001 C CNN
 F 3 "" H 8850 3900 50  0000 C CNN
 	1    8850 3900
 	1    0    0    -1  
@@ -244,7 +244,7 @@ U 1 1 5B1A2ECE
 P 3000 3750
 F 0 "P1" H 2919 4115 50  0000 C CNN
 F 1 "CONN_01X04" H 2919 4024 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3000 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3000 3750 50  0001 C CNN
 F 3 "" H 3000 3750 50  0000 C CNN
 	1    3000 3750
 	-1   0    0    -1  
@@ -254,14 +254,8 @@ Wire Wire Line
 Wire Wire Line
 	3350 3600 3350 3400
 Wire Wire Line
-	3200 3900 3350 3900
-Wire Wire Line
-	3350 3900 3350 4100
-Wire Wire Line
 	3200 3700 3850 3700
-Wire Wire Line
-	3200 3800 3450 3800
-Text GLabel 3450 3800 2    50   Input ~ 0
+Text GLabel 3250 4150 3    50   Input ~ 0
 EN
 Text GLabel 5150 4200 0    50   Input ~ 0
 EN
@@ -382,4 +376,12 @@ Text Notes 4200 3700 0    50   ~ 0
 VIN 4.5~28V
 Text Notes 5100 4100 1    50   ~ 0
 optional
+Wire Wire Line
+	3350 3800 3200 3800
+Wire Wire Line
+	3350 3800 3350 4100
+Wire Wire Line
+	3250 4150 3250 3900
+Wire Wire Line
+	3250 3900 3200 3900
 $EndSCHEMATC
