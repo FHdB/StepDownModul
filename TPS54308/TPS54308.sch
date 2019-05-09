@@ -48,17 +48,6 @@ F 3 "~" H 7750 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C7
-U 1 1 5B19C265
-P 8100 4050
-F 0 "C7" H 8215 4096 50  0000 L CNN
-F 1 "22u/6.3V/1210" V 8150 3350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.39x2.70mm_HandSolder" H 8138 3900 50  0001 C CNN
-F 3 "~" H 8100 4050 50  0001 C CNN
-	1    8100 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L device:C C2
 U 1 1 5B19C2C6
 P 4150 4050
@@ -67,17 +56,6 @@ F 1 "10u/50V/1210" V 4200 3350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.39x2.70mm_HandSolder" H 4188 3900 50  0001 C CNN
 F 3 "~" H 4150 4050 50  0001 C CNN
 	1    4150 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:C C1
-U 1 1 5B19C353
-P 3850 4050
-F 0 "C1" H 3965 4096 50  0000 L CNN
-F 1 "10u/50V/1210" V 3900 3350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.39x2.70mm_HandSolder" H 3888 3900 50  0001 C CNN
-F 3 "~" H 3850 4050 50  0001 C CNN
-	1    3850 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -129,19 +107,12 @@ Wire Wire Line
 Wire Wire Line
 	6950 3850 7500 3850
 Wire Wire Line
-	8100 3850 8100 3900
-Wire Wire Line
 	7750 3900 7750 3850
 Connection ~ 7750 3850
-Wire Wire Line
-	8100 4200 8100 4800
-Wire Wire Line
-	8100 4800 7750 4800
 Wire Wire Line
 	5600 4800 5600 4900
 Wire Wire Line
 	7750 4200 7750 4800
-Connection ~ 7750 4800
 Wire Wire Line
 	7750 4800 7500 4800
 Wire Wire Line
@@ -157,18 +128,9 @@ Wire Wire Line
 Wire Wire Line
 	4150 4800 4150 4200
 Wire Wire Line
-	4150 4800 3850 4800
-Wire Wire Line
-	3850 4800 3850 4200
-Connection ~ 4150 4800
-Wire Wire Line
 	4150 3900 4150 3700
 Wire Wire Line
 	4150 3700 4700 3700
-Wire Wire Line
-	3850 3900 3850 3700
-Wire Wire Line
-	3850 3700 4150 3700
 Connection ~ 4150 3700
 Wire Wire Line
 	6100 3700 6200 3700
@@ -181,8 +143,8 @@ L device:L L1
 U 1 1 5B19DE3E
 P 6700 3850
 F 0 "L1" V 6890 3850 50  0000 C CNN
-F 1 "L" V 6799 3850 50  0000 C CNN
-F 2 "Inductor_SMD:L_Wuerth_WE-PD-Typ-M-Typ-S_Handsoldering" H 6700 3850 50  0001 C CNN
+F 1 "7447798131_13uH_5.85A" V 6799 3850 50  0000 C CNN
+F 2 "Inductor_SMD:L_Wuerth_WE-PDF_Handsoldering" H 6700 3850 50  0001 C CNN
 F 3 "~" H 6700 3850 50  0001 C CNN
 	1    6700 3850
 	0    -1   -1   0   
@@ -223,38 +185,6 @@ Wire Wire Line
 Connection ~ 5150 3700
 Wire Wire Line
 	5150 3700 5300 3700
-Connection ~ 3850 3700
-Wire Wire Line
-	7750 3850 8100 3850
-Connection ~ 8100 3850
-$Comp
-L conn:CONN_01X04 P2
-U 1 1 5B1A2E4C
-P 8850 3900
-F 0 "P2" H 8928 3941 50  0000 L CNN
-F 1 "CONN_01X04" H 8928 3850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8850 3900 50  0001 C CNN
-F 3 "" H 8850 3900 50  0000 C CNN
-	1    8850 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:CONN_01X04 P1
-U 1 1 5B1A2ECE
-P 3000 3750
-F 0 "P1" H 2919 4115 50  0000 C CNN
-F 1 "CONN_01X04" H 2919 4024 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3000 3750 50  0001 C CNN
-F 3 "" H 3000 3750 50  0000 C CNN
-	1    3000 3750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 3600 3350 3600
-Wire Wire Line
-	3350 3600 3350 3400
-Wire Wire Line
-	3200 3700 3850 3700
 Text GLabel 3250 4150 3    50   Input ~ 0
 EN
 Text GLabel 5150 4200 0    50   Input ~ 0
@@ -269,67 +199,6 @@ Text GLabel 6500 4250 1    50   Input ~ 0
 FB
 Text GLabel 7150 3850 1    50   Input ~ 0
 VOUT
-Wire Wire Line
-	8100 3850 8450 3850
-Wire Wire Line
-	8650 3950 8450 3950
-Wire Wire Line
-	8450 3950 8450 3850
-Connection ~ 8450 3850
-Wire Wire Line
-	8450 3850 8650 3850
-Wire Wire Line
-	8650 4050 8450 4050
-Wire Wire Line
-	8450 4050 8450 4250
-Wire Wire Line
-	8650 3750 8450 3750
-Wire Wire Line
-	8450 3750 8450 3550
-$Comp
-L power:GND #PWR0102
-U 1 1 5B1A9C35
-P 8450 3550
-F 0 "#PWR0102" H 8450 3300 50  0001 C CNN
-F 1 "GND" H 8455 3377 50  0000 C CNN
-F 2 "" H 8450 3550 50  0001 C CNN
-F 3 "" H 8450 3550 50  0001 C CNN
-	1    8450 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5B1A9C87
-P 8450 4250
-F 0 "#PWR0103" H 8450 4000 50  0001 C CNN
-F 1 "GND" H 8455 4077 50  0000 C CNN
-F 2 "" H 8450 4250 50  0001 C CNN
-F 3 "" H 8450 4250 50  0001 C CNN
-	1    8450 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5B1A9CD9
-P 3350 4100
-F 0 "#PWR0104" H 3350 3850 50  0001 C CNN
-F 1 "GND" H 3355 3927 50  0000 C CNN
-F 2 "" H 3350 4100 50  0001 C CNN
-F 3 "" H 3350 4100 50  0001 C CNN
-	1    3350 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 5B1A9D13
-P 3350 3400
-F 0 "#PWR0105" H 3350 3150 50  0001 C CNN
-F 1 "GND" H 3355 3227 50  0000 C CNN
-F 2 "" H 3350 3400 50  0001 C CNN
-F 3 "" H 3350 3400 50  0001 C CNN
-	1    3350 3400
-	-1   0    0    1   
-$EndComp
 $Comp
 L device:C C3
 U 1 1 5B1AC376
@@ -373,15 +242,60 @@ Connection ~ 7500 4800
 Wire Wire Line
 	7500 4800 6950 4800
 Text Notes 4200 3700 0    50   ~ 0
-VIN 4.5~28V
+VIN 4.5 to 28V
 Text Notes 5100 4100 1    50   ~ 0
 optional
+$Comp
+L conn:CONN_01X02 P1
+U 1 1 5CD1F49D
+P 3000 3750
+F 0 "P1" H 2919 3475 50  0000 C CNN
+F 1 "CONN_01X02" H 2919 3566 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 3000 3750 50  0001 C CNN
+F 3 "" H 3000 3750 50  0000 C CNN
+	1    3000 3750
+	-1   0    0    1   
+$EndComp
+Text GLabel 8600 3950 0    50   Input ~ 0
+FB
 Wire Wire Line
-	3350 3800 3200 3800
+	3250 3800 3250 4150
 Wire Wire Line
-	3350 3800 3350 4100
+	3250 3800 3200 3800
+$Comp
+L conn:CONN_01X04 P2
+U 1 1 5CD22611
+P 9050 4000
+F 0 "P2" H 9128 4041 50  0000 L CNN
+F 1 "CONN_01X04" H 9128 3950 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 9050 4000 50  0001 C CNN
+F 3 "" H 9050 4000 50  0000 C CNN
+	1    9050 4000
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3250 4150 3250 3900
+	8600 3950 8850 3950
 Wire Wire Line
-	3250 3900 3200 3900
+	8850 4050 8550 4050
+Wire Wire Line
+	8550 4050 8550 4500
+$Comp
+L power:GND #PWR0102
+U 1 1 5CD24D89
+P 8550 4500
+F 0 "#PWR0102" H 8550 4250 50  0001 C CNN
+F 1 "GND" H 8555 4327 50  0000 C CNN
+F 2 "" H 8550 4500 50  0001 C CNN
+F 3 "" H 8550 4500 50  0001 C CNN
+	1    8550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 4150 8750 4150
+Wire Wire Line
+	8750 4150 8750 4500
+Wire Wire Line
+	7750 3850 8850 3850
+Wire Wire Line
+	3200 3700 4150 3700
 $EndSCHEMATC
