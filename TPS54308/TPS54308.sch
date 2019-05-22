@@ -142,12 +142,12 @@ $Comp
 L device:L L1
 U 1 1 5B19DE3E
 P 6700 3850
-F 0 "L1" V 6650 3850 50  0000 C CNN
+F 0 "L1" H 6650 3850 50  0000 C CNN
 F 1 "74437346082_8u2_3.25A" V 6750 3500 50  0000 C CNN
 F 2 "Inductor_SMD:L_Wuerth_WE-PD-Typ-M-Typ-S_Handsoldering" H 6700 3850 50  0001 C CNN
 F 3 "~" H 6700 3850 50  0001 C CNN
 	1    6700 3850
-	-1   0    0    1   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6850 3850 6950 3850
